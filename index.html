@@ -87,13 +87,15 @@
                 {
                     term.echo("You said this: " + result);
                 });
-                status = "saidHello";
+                status = "saidgood";
             } else if (command == 'bad') {
-                this.echo("That's unfortunat.");
-                status === 'noone'
+                this.echo("That's unfortunate.");
+                this.echo("I always hate it when people have bad days.")
+                this.echo("Is there anything I can do to help?")
+                status === 'saidbad'
             }
-            console.log("asdf");
-            alert("hello");
+        
+
             // else {
             //     if (command !== '') {
             //         try {
