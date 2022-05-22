@@ -90,7 +90,9 @@
                 status = "saidgood";
             } else if (command == 'bad') {
                 this.echo("That's unfortunate.");
+                setTimeout(() => {  console.log("World!"); }, 1000);
                 this.echo("I always hate it when people have bad days.");
+                setTimeout(() => {  console.log("World!"); }, 1000);
                 this.echo("Is there anything I can do to help?");
                 status === 'saidbad'
             }
