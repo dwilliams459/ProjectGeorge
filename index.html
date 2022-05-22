@@ -84,7 +84,7 @@
             if (status === 'start' && command === 'hello') {
                 this.read("What do you want? ", function(result) 
                 {
-                    term.echo("You said: " + result);
+                    term.echo("You said this: " + result);
                 });
                 status = "saidHello";
             } else if (command == 'help') {
