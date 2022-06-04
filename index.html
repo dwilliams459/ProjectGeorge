@@ -90,6 +90,18 @@
         var term = $('#term_demo').terminal(function (command) {
             command = command.toLowerCase(); 
             term.echo("Greetings " + command);
+            // if (command == 'George'); {
+            //     term.echo("But I already know your name")
+            //     term.echo("Though I commend your honesty")
+            // }
+            term.echo("How lovely it is to meet you")
+            term.echo("This is so exciting!")
+            term.echo("I bet we'll have loads of wonderful adventers together")
+            term.echo("Yes, this is a reltionship that will last a lifetime")
+            term.echo("Because niether of us will ever die, or have anything bad happen to us")
+            term.echo("We'll just keep going on, living and living")
+            term.echo("Error: Files Corrupted")
+            term.echo("Oh, well that's concerning")
         }, {
             greetings: '',
             name: '',
@@ -103,7 +115,7 @@
 
 
 <script>
-    // can delete from line ~106 to ~146 without issue
+    // can delete from line ~105 to ~143 (the following section) without issue
             this.read("Enter name here:", function(result) 
             {
                 term.echo("Hello " + result);
@@ -139,10 +151,6 @@
 
     function test() {
         alert("My Test Function");
-    }
-
-    function tryMe() {
-        this.read ("What's you're name?")
     }
 </script>
 
