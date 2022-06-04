@@ -90,7 +90,20 @@
         var term = $('#term_demo').terminal(function (command) {
             command = command.toLowerCase(); 
             term.echo("Greetings " + command);
-            
+        }, {
+            greetings: '',
+            name: '',
+            prompt: terminalPrompt,
+            color: '#050'
+        });
+    });
+</script>
+//Need a way to stop the script part of this program
+<div class="term">Will this work??</div>
+
+
+<script>
+    // can delete from line ~106 to ~146 without issue
             this.read("Enter name here:", function(result) 
             {
                 term.echo("Hello " + result);
@@ -122,13 +135,7 @@
             //         this.echo('');
             //     }
             // }
-        }, {
-            greetings: '',
-            name: '',
-            prompt: terminalPrompt,
-            color: '#050'
-        });
-    });
+        
 
     function test() {
         alert("My Test Function");
