@@ -88,10 +88,12 @@
     var terminalPrompt = "j> "
     jQuery(function ($, undefined) {
         var term = $('#term_demo').terminal(function (command) {
-
+            debugger;
             command = command.toLowerCase(); 
-            var name = term.read('What is your name?');
+            var name;
+            term.read('What is your name?', name);
             term.echo("They said " + name);
+
             
             if (status === 'start' && command === 'good') {
                 this.read("That's great!", function(result) 
