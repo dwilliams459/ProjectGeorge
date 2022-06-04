@@ -89,20 +89,22 @@
     jQuery(function ($, undefined) {
         var term = $('#term_demo').terminal(function (command) {
             command = command.toLowerCase(); 
-            var name = prompt("And you are?");
-            term.echo("They said " + name);
+            term.echo("Greetings " + command);
             
+            this.read("Enter name here:", function(result) 
+            {
+                term.echo("Hello " + result);
+
+                term.read("What do you want to do now?", function(result2) {
+                    term.echo("You said" + result2);
+                })
+            });
+            //var name = prompt("And you are?");
+
             if (status === 'start' && command === 'good') {
-                this.read("That's great!", function(result) 
-                {
-                    term.echo("You said this: " + result);
-                });
-                status = "saidgood";
+                // Demo
             } else if (command == 'bad') {
-                this.echo("That's unfortunate.");
-                this.echo("I always hate it when people have bad days.");
-                this.echo("Is there anything I can do to help?");
-                status === 'saidbad'
+                // Demo
             }
         
 
