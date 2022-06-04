@@ -34,7 +34,7 @@
             height: 90%;
             font-family: 'Courier New', Courier, monospace;
         }
-
+  
         .terminal-box {
             width: 800px;
             height: 80%;
@@ -88,10 +88,8 @@
     var terminalPrompt = "j> "
     jQuery(function ($, undefined) {
         var term = $('#term_demo').terminal(function (command) {
-            debugger;
             command = command.toLowerCase(); 
-            var name = window.prompt();
-            term.read ('What is your name?', name);
+            var name = prompt("And you are?");
             term.echo("They said " + name);
             
             if (status === 'start' && command === 'good') {
@@ -129,6 +127,14 @@
             color: '#050'
         });
     });
+
+    function test() {
+        alert("My Test Function");
+    }
+
+    function tryMe() {
+        this.read ("What's you're name?")
+    }
 </script>
 
 
