@@ -65,14 +65,14 @@
                 <div class="term">How did you get here?</div>
                 <div class="term">No one is supposed to find this place</div>
                 <div class="term">So how...</div>
-                <div>Wait</div>
+                <div class="term">Wait</div>
                 <div class="term">This is odd...</div>
                 <div class="term">We're not alone here</div>
-                <div>I'm sure it's nothing to be conerned about, though</div>
+                <div class="term">I'm sure it's nothing to be conerned about, though</div>
                 <div class="term">Now, where are my manners</div>
-                <div>I  haven't even introduced myself</div>
-                <div>I'm John</div>
-                <div>And you are?</div>
+                <div class="term">I  haven't even introduced myself</div>
+                <div class="term">I'm John</div>
+                <div class="term">And you are?</div>
             </div>
         </div>
     </div>
@@ -90,7 +90,9 @@
         var term = $('#term_demo').terminal(function (command) {
 
             command = command.toLowerCase(); 
-
+            var name = term.read('What is your name?');
+            term.echo("They said " + name);
+            
             if (status === 'start' && command === 'good') {
                 this.read("That's great!", function(result) 
                 {
