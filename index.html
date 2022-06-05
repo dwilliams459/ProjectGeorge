@@ -106,9 +106,16 @@
             term.echo("I'm not really sure what that's about");
             term.echo("But, it's probably fine");
             term.echo("Right?");
+            term.echo("What do you think?")
             term.echo("Should I be worried?");
-            console.clear
-            
+            if (command == "yes") {
+                term.echo("Oh, dear");
+                term.echo("I know you're probably right, but I don't want to believe you");
+                term.echo("I, for one, am sure everything will be fine")
+            } else if (command == no) {
+                term.echo("Ah, that's wonderful");
+                term.echo("I'm so glad we agree!")
+            }
         }, {
             greetings: '',
             name: '',
