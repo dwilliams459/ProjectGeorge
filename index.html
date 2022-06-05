@@ -102,7 +102,7 @@
             term.echo("We'll just keep going on, living and living")
             term.echo("Error: Files Corrupted")
             term.echo("Ah, well that's concerning")
-            term.echo("                                                                          indeed it is")
+            term.echo("")
         }, {
             greetings: '',
             name: '',
@@ -152,6 +152,19 @@
     function test() {
         alert("My Test Function");
     }
+
+    function sleep(milliseconds) {
+     const date = Date.now();
+     let currentDate = null;
+     do {
+       currentDate = Date.now();
+     } while (currentDate - date < milliseconds);
+}
+
+// console.log("Hello");
+// sleep(2000);
+// console.log("World!");
+
 </script>
 
 
