@@ -86,8 +86,9 @@
 
 <script>
     var status = "start";  // or use 'start', 'saidHello', 'done', or 1, 2, 3....
-    var terminalPrompt = "j> "
-    jQuery(function ($, undefined) {
+    var terminalPrompt = "j> "   
+    jQuery(function ($, undefined) {  
+        var a = 1
         var term = $('#term_demo').terminal(function (command) {
             command = command.toLowerCase(); 
             term.echo("Greetings " + command);
@@ -96,6 +97,8 @@
             //     term.echo("Though I commend your honesty")
             // }
             term.echo("How lovely it is to meet you!");
+            function timer();
+            data.when(a=2)
             term.echo("This is so exciting!");
             term.echo("I bet we'll have loads of wonderful adventures together");
             term.echo("Yes, this is a realtionship that will last a lifetime");
@@ -149,24 +152,29 @@
             test()
         
 
-            // else {
-            //     if (command !== '') {
-            //         try {
-            //             var result = window.eval(command);
-            //             if (result !== undefined) {
-            //                 this.echo(new String(result));
-            //             }
-            //         } catch (e) {
-            //             this.error(new String(e));
-            //         }
-            //     } else {
-            //         this.echo('');
-            //     }
-            // }
+            /* else {
+                 if (command !== '') {
+                     try {
+                         var result = window.eval(command);
+                         if (result !== undefined) {
+                             this.echo(new String(result));
+                         }
+                     } catch (e) {
+                         this.error(new String(e));
+                     }
+                 } else {
+                     this.echo('');
+                 }
+            /* }
         
 
     function test() {
-        alert("My Test Function");
+        alert("My Test Function"):
+    }
+
+    function timer() {
+        sleep(1000)
+        var a ++
     }
 
     function sleep(milliseconds) {
