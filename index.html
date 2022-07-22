@@ -95,9 +95,6 @@
             //     term.echo("But I already know your name")
             //     term.echo("Though I commend your honesty")
             // }
-            var a = 0
-            function timer();
-            data.when(a=10)
             term.echo("How lovely it is to meet you!");
             term.echo("This is so exciting!");
             term.echo("I bet we'll have loads of wonderful adventures together");
@@ -134,11 +131,11 @@
 
 <script>
     // can delete from line ~105 to ~143 (the following section) without issue
-            console.log("Enter name here:", function(result) 
+            this.read("Enter name here:", function(result) 
             {
                 term.echo("Hello " + result);
 
-                term.echo("What do you want to do now?", function(result2) {
+                term.read("What do you want to do now?", function(result2) {
                     term.echo("You said" + result2);
                 })
             });
@@ -175,7 +172,7 @@
 
     function timer() {
         sleep(1000);
-        var a = a +10;
+        var a = a + 10;
     }
 
     function sleep(milliseconds) {
