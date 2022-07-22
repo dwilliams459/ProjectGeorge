@@ -88,7 +88,6 @@
     var status = "start";  // or use 'start', 'saidHello', 'done', or 1, 2, 3....
     var terminalPrompt = "j> "   
     jQuery(function ($, undefined) {  
-        var a = 1
         var term = $('#term_demo').terminal(function (command) {
             command = command.toLowerCase(); 
             term.echo("Greetings " + command);
