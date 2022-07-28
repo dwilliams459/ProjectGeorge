@@ -27,6 +27,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css" rel="stylesheet" />
     <link href ="style.css" rel="stylesheet">
+    <script defer src="game.js"></script>
 
     <title>Project George</title>
 </head>
@@ -59,49 +60,6 @@
         crossorigin="anonymous"></script>
 </body>
 
-<script>
-    var status = "start";  // or use 'start', 'saidHello', 'done', or 1, 2, 3....
-    var terminalPrompt = "g> "   
-    jQuery(function ($, undefined) {  
-        var term = $('#term_demo').terminal(function (command) {
-            command = command.toLowerCase(); 
-            term.echo("Greetings " + command);
-            // if (command == 'George'); {
-            //     term.echo("But I already know your name")
-            //     term.echo("Though I commend your honesty")
-            // }
-            term.echo("How lovely it is to meet you!");
-            term.echo("This is so exciting!");
-            term.echo("I bet we'll have loads of wonderful adventures together");
-            term.echo("Yes, this is a realtionship that will last a lifetime");
-            term.echo("Because niether of us will ever die, or have anything bad happen to us");
-            term.echo("We'll just keep going on, living and living");
-            term.echo("Error: Files Corrupted");
-            term.echo("Ah, well that's concerning");
-            term.echo("I'm not really sure what that's about");
-            term.echo("But, it's probably fine");
-            term.echo("Right?");
-            term.echo("What do you think?")
-            term.echo("Should I be worried?");
-            //var term = $('#term_demo').terminal(function (answer) {
-               //answer = answer.toLowerCase
-            //})
-            //if (answer == "yes") {
-                //term.echo("Oh, dear");
-                //term.echo("I know you're probably right, but I don't want to believe you");
-                //term.echo("I, for one, am sure everything will be fine")
-            //} else if (answer == "no") {
-                //term.echo("Ah, that's wonderful");
-                //term.echo("I'm so glad we agree!")
-            //}
-        }, {
-            greetings: '',
-            name: '',
-            prompt: terminalPrompt,
-            color: '#050'
-        });
-    });
-</script>
 
 
 <script>
