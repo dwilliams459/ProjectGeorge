@@ -18,7 +18,7 @@ var status = "start";  // or use 'start', 'saidHello', 'done', or 1, 2, 3....
             term.echo("What do you think?");
             term.echo("Should I be worried?");
         },
-    });
+    )});
 
     /* can delete from line ~105 to ~143 (the following section) without issue
             this.read("Enter name here:", function(result) 
