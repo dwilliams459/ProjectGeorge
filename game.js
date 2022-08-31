@@ -1,3 +1,4 @@
+let pause = 0
 var status = "start";  // or use 'start', 'saidHello', 'done', or 1, 2, 3....
     var terminalPrompt = "g> "   
     jQuery(function ($, undefined) {  
@@ -72,7 +73,13 @@ var status = "start";  // or use 'start', 'saidHello', 'done', or 1, 2, 3....
                    currentDate = Date.now();
                  } while (currentDate - date < milliseconds);
             }
-            
+            function waitsystem() {
+                pause + 1
+            }
+
+            if (pause = 1) {
+                term.echo("it worked :)")
+            }
             // console.log("Hello");
             // sleep(2000);
             // console.log("World!");
