@@ -1,5 +1,5 @@
 let pause = 0
-var status = "start";  // or use 'start', 'saidHello', 'done', or 1, 2, 3....
+/* var status = "start";  // or use 'start', 'saidHello', 'done', or 1, 2, 3....
     var terminalPrompt = "g> "   
     jQuery(function ($, undefined) {  
         var term = $('#term_demo').terminal(function (command) {
@@ -78,7 +78,7 @@ var status = "start";  // or use 'start', 'saidHello', 'done', or 1, 2, 3....
             }
 
             if (pause = 1) {
-                term.echo("it worked :)")
+                document.write("it worked :)")
             }
             // console.log("Hello");
             // sleep(2000);
