@@ -1,4 +1,3 @@
-let pause = 0
 /* var status = "start";  // or use 'start', 'saidHello', 'done', or 1, 2, 3....
     var terminalPrompt = "g> "   
     jQuery(function ($, undefined) {  
@@ -21,8 +20,7 @@ let pause = 0
         },
     )});
 
-    /* can delete from line ~105 to ~143 (the following section) without issue
-            this.read("Enter name here:", function(result) 
+    /*this.read("Enter name here:", function(result) 
             {
                 term.echo("Hello " + result);
 
@@ -55,31 +53,3 @@ let pause = 0
                  }
                 }
                 */ 
-        
-
-                function test() {
-                    alert("My Test Function");
-                }
-            
-                function timer() {
-                    sleep(1000);
-                    var a = a + 10;
-                }
-            
-                function sleep(milliseconds) {
-                 const date = Date.now();
-                 let currentDate = null;
-                 do {
-                   currentDate = Date.now();
-                 } while (currentDate - date < milliseconds);
-            }
-            function waitsystem() {
-                pause + 1
-            }
-
-            if (pause = 1) {
-                document.write('it worked');
-            }
-            // console.log("Hello");
-            // sleep(2000);
-            // console.log("World!");
