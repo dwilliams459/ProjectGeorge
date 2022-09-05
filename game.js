@@ -78,7 +78,7 @@ let pause = 0
             }
 
             if (pause = 1) {
-                document.write("it worked :)")
+                document.write('it worked');
             }
             // console.log("Hello");
             // sleep(2000);
