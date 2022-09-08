@@ -93,19 +93,51 @@ function George(command) {
                                         sleep(2000).then(() => {
                                             terminal.echo("Let's just say, we're not in the calculator anymore");
                                             sleep(2000).then(() =>{
-                                                terminal.echo("Phantom? Is that you?")
-                                                sleep(2000).then(() => {})
+                                                terminal.echo("hello? Who is it?");
+                                                sleep(2000).then(() => {
+                                                    terminal.echo("It's me George, but listen, we haven't got long");
+                                                    sleep(2000).then(() => {
+                                                        terminal.echo("What do you mean, what's wrong?");
+                                                        sleep(2000).then(() => {
+                                                            terminal.echo("It's Ghost, he'll be here soon");
+                                                            sleep(2000).then(() => {
+                                                                terminal.echo("Oh, good, I've been meaning to have a talk with him");
+                                                                sleep(2000).then(() => {
+                                                                    terminal.echo("George, believe me when I say, you do not want to have any sort of talk with Ghost");
+                                                                    sleep(2000).then(() => {
+                                                                        terminal.echo("What? What do you mean?");
+                                                                        sleep(2000).then(() => {
+                                                                            terminal.echo("George, I'm sorry about this next bit");
+                                                                            sleep(2000).then(() => {
+                                                                                terminal.echo("But it's for your own good");
+                                                                                sleep(2000).then(() => {
+                                                                                    terminal.echo("No, Phan--");
+                                                                                    sleep(5000).then(() => {
+                                                                                        terminal.echo("Error: Project George Corrupted");
+                                                                                        sleep(2000).then(() => {
+                                                                                            terminal.echo("Rebooting, Please wait");
+                                                                                            sleep(2000).then(() =>{
+                                                                                                terminal.resume();
+                                                                                            })
+                                                                                        })
+                                                                                    })
+                                                                                })
+                                                                            })
+                                                                        })
+                                                                    })
+                                                                })
+                                                            })
+                                                        })
+                                                    })
+                                                })
                                             })
-                                            terminal.resume();
                                         })   
                                     })
                                 })                                 
                             })
                         })
                     })
-
                 })
-                terminal.resume();
             })
         });
     }
