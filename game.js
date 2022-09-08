@@ -68,12 +68,12 @@ function George(command) {
 
     if (userStatus === 'start') {
         if (command);
-        terminal.echo("It's nice to meet you," + command);
+        terminal.echo("It's nice to meet you " + command);
         userStatus = 'saidName'
     }
 
     if (userStatus === 'saidName') {
-        terminal.pause
+        terminal.pause();
         sleep(2000).then(() => {
             terminal.echo("Um...");
             sleep(2000).then(() => {
@@ -92,6 +92,10 @@ function George(command) {
                                         terminal.echo("Where am I?");
                                         sleep(2000).then(() => {
                                             terminal.echo("Let's just say, we're not in the calculator anymore");
+                                            sleep(2000).then(() =>{
+                                                terminal.echo("Phantom? Is that you?")
+                                                sleep(2000).then(() => {})
+                                            })
                                             terminal.resume();
                                         })   
                                     })
