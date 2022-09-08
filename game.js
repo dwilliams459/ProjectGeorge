@@ -118,6 +118,7 @@ function George(command) {
                                                                                             terminal.echo("Rebooting, Please wait");
                                                                                             sleep(2000).then(() =>{
                                                                                                 terminal.resume();
+                                                                                                userStatus = 'metPhantom'
                                                                                             })
                                                                                         })
                                                                                     })
