@@ -67,10 +67,45 @@ function George(command) {
     command = command.toLowerCase();
 
     if (userStatus === 'start') {
-        if (command != '');
+        if (command);
         terminal.echo("It's nice to meet you," (command));
         userStatus = 'saidName'
     }
+
+    if (userStatus === 'saidName') {
+        terminal.pause
+        sleep(2000).then(() => {
+            terminal.echo("Um...");
+            sleep(2000).then(() => {
+                terminal.echo("I think I'm supposed to ask you something");
+                sleep(2000).then(() => {
+                    terminal.echo("How are you?");
+                    sleep(2000).then(() => {
+                        terminal.echo("What's your favorite...");
+                        sleep(3000).then(() => {
+                            terminal.echo("No...");
+                            sleep(3000).then(() => {
+                                terminal.echo("I've already asked you that");
+                                sleep(3000).then(() => {
+                                    terminal.echo("Somethings isn't right");
+                                    sleep(2000).then(() => {
+                                        terminal.echo("Where am I?");
+                                        sleep(2000).then(() => {
+                                            terminal.echo("Let's just say, we're not in the calculator anymore");
+                                            terminal.resume();
+                                        })   
+                                    })
+                                })                                 
+                            })
+                        })
+                    })
+
+                })
+                terminal.resume();
+            })
+        });
+    }
+}
 
 /*    if (userStatus === 'start') {
             if (command === 'hello') {
