@@ -68,7 +68,7 @@ function George(command) {
 
     if (userStatus === 'start') {
         if (command);
-        terminal.echo("It's nice to meet you," + (command));
+        terminal.echo("It's nice to meet you," + command);
         userStatus = 'saidName'
     }
 
@@ -87,7 +87,7 @@ function George(command) {
                             sleep(3000).then(() => {
                                 terminal.echo("I've already asked you that");
                                 sleep(3000).then(() => {
-                                    terminal.echo("Somethings isn't right");
+                                    terminal.echo("Something isn't right");
                                     sleep(2000).then(() => {
                                         terminal.echo("Where am I?");
                                         sleep(2000).then(() => {
