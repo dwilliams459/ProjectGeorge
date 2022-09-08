@@ -53,14 +53,14 @@ function startGeorge() {
     terminal.echo("I am George");
     terminal.echo("Who are you?");
 
-    terminal.pause();
+  /*  terminal.pause();
     sleep(2000).then(() => {
         terminal.echo("test 3");
         sleep(2000).then(() => {
             terminal.echo("test 4");
             terminal.resume();
         })
-    });
+    }); */
 }
 
 function George(command) {
