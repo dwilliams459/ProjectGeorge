@@ -115,7 +115,7 @@ function George(command) {
                                                                                     sleep(5000).then(() => {
                                                                                         terminal.echo("Error: Project George Corrupted");
                                                                                         sleep(2000).then(() => {
-                                                                                            terminal.echo("Rebooting, Please wait");
+                                                                                            terminal.echo("Please enter coade to continue");
                                                                                             sleep(2000).then(() =>{
                                                                                                 terminal.resume();
                                                                                                 userStatus = 'metPhantom'
