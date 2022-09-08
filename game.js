@@ -68,7 +68,7 @@ function George(command) {
 
     if (userStatus === 'start') {
         if (command);
-        terminal.echo("It's nice to meet you," (command));
+        terminal.echo("It's nice to meet you," + (command));
         userStatus = 'saidName'
     }
 
