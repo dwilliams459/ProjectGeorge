@@ -67,6 +67,12 @@ function George(command) {
     command = command.toLowerCase();
 
     if (userStatus === 'start') {
+        if (command != '');
+        terminal.echo("It's nice to meet you," (command));
+        userStatus = 'saidName'
+    }
+
+/*    if (userStatus === 'start') {
             if (command === 'hello') {
             terminal.echo('test 5');
             userStatus = 'saidhello';
@@ -75,7 +81,7 @@ function George(command) {
         terminal.echo('test 6');
         branch1(command);
     }
-}
+} */
 
 function branch1(command) {
     terminal.echo('test 7');
