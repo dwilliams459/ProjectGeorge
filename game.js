@@ -22,7 +22,7 @@ jQuery(function ($, undefined) {
             this.scroll_to_bottom();
         }
     }, {
-        greetings: 'Hello there!',
+        greetings: 'Hello?',
         name: 'js_demo',
         height: 400,
         width: 600,
@@ -50,8 +50,8 @@ function sleep(ms) {
 
 // Start of application
 function startGeorge() {
-    terminal.echo("Welcome");
-    terminal.echo("test 2");
+    terminal.echo("I am George");
+    terminal.echo("Who are you?");
 
     terminal.pause();
     sleep(2000).then(() => {
@@ -67,7 +67,7 @@ function George(command) {
     command = command.toLowerCase();
 
     if (userStatus === 'start') {
-        if (command === 'hello') {
+            if (command === 'hello') {
             terminal.echo('test 5');
             userStatus = 'saidhello';
         }
