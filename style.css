@@ -5,7 +5,10 @@ body {
     color: rgb(2, 209, 2);
     font-size: 12px;    
 }
-
+.button {
+    background-color:gray;
+    font-color:lime;
+    display: inline-block;
 p {
     margin-bottom:0px;
 }
